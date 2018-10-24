@@ -23,28 +23,28 @@ public class TodoListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_list);
-        //TODO 12: Adicionar a toolbar na TodoListActivity
+        //TODO 11: Adicionar a toolbar na TodoListActivity
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        //TODO 15: Mapear componente do item da lista
+        //TODO 14: Mapear componente do item da lista
         txtItem = findViewById(R.id.textViewItem);
 
-        //TODO 16: Adicionar evento de clique no botão
+        //TODO 15: Adicionar evento de clique no botão
         btnSalvar = findViewById(R.id.buttonSave);
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO 17: Verificar se usuário digitou o item da lista antes de salvar
+                //TODO 16: Verificar se usuário digitou o item da lista antes de salvar
                 if  (txtItem.getEditableText().toString().isEmpty()) {
                     Toast.makeText(TodoListActivity.this, "Insira o item da lista para salvar", Toast.LENGTH_LONG).show();
                 } else {
-                    //TODO 18: Salvar informação no bundle
+                    //TODO 17: Salvar informação no bundle
                     Intent data = new Intent();
                     data.putExtra(LIST_ITEM, txtItem.getEditableText().toString());
-                    //TODO 19: Retornar para main activity
+                    //TODO 18: Retornar para main activity
                     setResult(Activity.RESULT_OK, data);
                     finish();
                 }
@@ -52,7 +52,7 @@ public class TodoListActivity extends AppCompatActivity {
         });
     }
 
-    //TODO 20: Configurar o clique do botão na back Arrow da toolbar
+    //TODO 19: Configurar o clique do botão na back Arrow da toolbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 

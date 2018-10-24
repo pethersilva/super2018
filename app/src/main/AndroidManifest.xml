@@ -17,7 +17,7 @@
 			</intent-filter>
 		</activity>
 
-		<!-- TODO 09: Declarar a Activity TodoListActivity -->
+		<!-- TODO 08: Declarar a Activity TodoListActivity -->
 
 		<activity android:name=".TodoListActivity" />
 	</application>

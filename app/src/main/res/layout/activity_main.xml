@@ -14,7 +14,7 @@
 		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
 		style="@style/HeaderBar"/>
 
-	<!-- TODO 23: Adicionar layout da listview -->
+	<!-- TODO 22: Adicionar layout da listview -->
 	<ListView
 		android:id="@+id/listview"
 		android:layout_width="match_parent"
@@ -30,6 +30,6 @@
 		app:layout_constraintTop_toTopOf="@+id/toolbar"
 		app:layout_constraintVertical_bias="1.0" />
 
-	<!-- TODO 24: Criar o layout listview row. Menu -> Add new layout-->
+	<!-- TODO 23: Criar o layout listview row. Menu -> Add new layout-->
 
 </android.support.constraint.ConstraintLayout>

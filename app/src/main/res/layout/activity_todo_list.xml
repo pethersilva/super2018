@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".TodoListActivity">
 
-    <!-- TODO 11: Configurar a toolbar -->
+    <!-- TODO 10: Configurar a toolbar -->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -14,8 +14,8 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         style="@style/HeaderBar"/>
 
-    <!-- TODO 13: Adicionar campo (EditText) receber item da lista. Usar ConstraintLayout -->
-    <!-- TODO 14: Adicionar botão para enviar item digitado para a MainActivity. Usar ConstraintLayout -->
+    <!-- TODO 12: Adicionar campo (EditText) receber item da lista. Usar ConstraintLayout -->
+    <!-- TODO 13: Adicionar botão para enviar item digitado para a MainActivity. Usar ConstraintLayout -->
 
     <EditText
         android:id="@+id/textViewItem"
