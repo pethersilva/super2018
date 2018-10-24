@@ -5,10 +5,4 @@
     tools:context=".MainActivity">
 
     <!-- TODO 03: Adicionar itens ao menu e criar uma imagem do botão + -->
-    <item
-        android:id="@+id/action_adicionar"
-        android:orderInCategory="300"
-        android:title="@string/toolbar_add_title"
-        android:icon="@drawable/ic_add_white_24dp"
-        app:showAsAction="always"/>
 </menu>

@@ -24,44 +24,12 @@ public class TodoListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_list);
         //TODO 11: Adicionar a toolbar na TodoListActivity
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
         //TODO 14: Mapear componente do item da lista
-        txtItem = findViewById(R.id.textViewItem);
-
         //TODO 15: Adicionar evento de clique no botão
-        btnSalvar = findViewById(R.id.buttonSave);
-        btnSalvar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //TODO 16: Verificar se usuário digitou o item da lista antes de salvar
-                if  (txtItem.getEditableText().toString().isEmpty()) {
-                    Toast.makeText(TodoListActivity.this, "Insira o item da lista para salvar", Toast.LENGTH_LONG).show();
-                } else {
-                    //TODO 17: Salvar informação no bundle
-                    Intent data = new Intent();
-                    data.putExtra(LIST_ITEM, txtItem.getEditableText().toString());
-                    //TODO 18: Retornar para main activity
-                    setResult(Activity.RESULT_OK, data);
-                    finish();
-                }
-            }
-        });
+        //TODO 16: Verificar se usuário digitou o item da lista antes de salvar
+        //TODO 17: Salvar informação no bundle
+        //TODO 18: Retornar para main activity
     }
 
     //TODO 19: Configurar o clique do botão na back Arrow da toolbar
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        if (id == android.R.id.home) {
-            setResult(Activity.RESULT_CANCELED);
-            finish();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

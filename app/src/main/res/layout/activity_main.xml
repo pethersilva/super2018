@@ -7,29 +7,7 @@
 	tools:context=".MainActivity">
 
 	<!-- TODO 01: Adicionar uma toolbar -->
-	<android.support.v7.widget.Toolbar
-		android:id="@+id/toolbar"
-		android:layout_width="match_parent"
-		android:layout_height="?attr/actionBarSize"
-		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-		style="@style/HeaderBar"/>
-
 	<!-- TODO 22: Adicionar layout da listview -->
-	<ListView
-		android:id="@+id/listview"
-		android:layout_width="match_parent"
-		android:layout_height="499dp"
-		android:layout_marginStart="8dp"
-		android:layout_marginEnd="8dp"
-		android:layout_marginBottom="8dp"
-		android:orientation="horizontal"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="@+id/toolbar"
-		app:layout_constraintVertical_bias="1.0" />
-
 	<!-- TODO 23: Criar o layout listview row. Menu -> Add new layout-->
 
 </android.support.constraint.ConstraintLayout>
